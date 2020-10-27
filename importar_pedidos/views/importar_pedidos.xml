@@ -1,0 +1,32 @@
+<odoo>
+        <!-- Vista Formulario -->
+        <record model="ir.ui.view" id="wizard_form_view">
+            <field name="name">wizard.form</field>
+            <field name="model">importarpedidos.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Importar JSON">
+                    <group>
+                        <!--<field widget="binary" height="64" name="archivo"/>-->
+                    </group>
+                    <footer>
+                        <button name="importar_json" type="object" string="Importar" class="oe_highlight"/>
+                        or
+                        <button special="cancel" string="Cancelar"/>
+                    </footer>                    
+                </form>
+            </field>
+        </record>
+
+        <!-- Accion de Ventana -->
+        <record id="launch_importar_pedidos_wizard" model="ir.actions.act_window">
+            <field name="name">Importar JSON</field>
+            <field name="res_model">importarpedidos.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- Item de Menu -->
+        <menuitem id="wizard_menu" name="Importar JSON"
+                  parent="sale.sale_order_menu"
+                  action="launch_importar_pedidos_wizard"/>
+</odoo>

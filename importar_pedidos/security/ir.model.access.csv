@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+importar_pedidos_total,importar pedidos total,model_importarpedidos_wizard,group_importar_pedidos,1,1,1,1

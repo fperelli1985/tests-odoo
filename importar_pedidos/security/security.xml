@@ -1,0 +1,5 @@
+<odoo>
+    <record id="group_importar_pedidos" model="res.groups">
+        <field name="name">Importar Pedidos JSON</field>
+    </record>
+</odoo>

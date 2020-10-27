@@ -1,0 +1,11 @@
+{
+    "fsdeploy.nodes": [
+        {
+            "source":"C:/Sistemas/Proyectos/Web/prueba/importar_pedidos",
+            "target":"C:/Sistemas/Proyectos/Web/odoo/addons/importar_pedidos",
+            "include":"**/*.*",
+            "exclude":"**/min/*.*",
+            //"deleteTargetOnDeploy": true,
+        }    
+    ]
+}
